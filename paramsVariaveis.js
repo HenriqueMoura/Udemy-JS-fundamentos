@@ -10,4 +10,4 @@ for (i in arguments){
 console.log(soma())
 console.log (soma(1))
 console.log (soma(1.2, 2.1, 3.3,))
-console.log (soma(1.1 , 2.2 "teste"))
+console.log (soma(1.1 , 2.2 ,"teste"))
