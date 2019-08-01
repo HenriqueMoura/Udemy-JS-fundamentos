@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+   <div>
+       <label for="compras">compras</label>
+       <ul id="compras" destino="escritorio" data-urgencia="5">
+           <li>Café</li>
+           <li>Àgua</li>
+           <li>Copo Descartavel</li>
+       </ul>
+   </div>
+    <script>
+       const lista = document.querySelector('div ul[destino="escritorio"]')
+        console.log('Elemento "ul" ..............')
+        console.log('childNodes', lista.childNodes)
+        console.log('destino', lista.destino)
+        console.log('getAtribute', lista.getAttribute('destino'))
+        console.log('hasAtribute', lista.hasAttribute('destino'))
+        lista.setAttribute('destino','empresa')
+        lista.setAttribute('status','aberto')
+        lista.removeAttribute('destino')
+    </script>
+
+</body>
